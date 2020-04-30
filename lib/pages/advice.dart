@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 
 
-class AdvicePage extends StatelessWidget {
+class AdvicePage extends StatefulWidget {
+  @override
+  _AdvicePageState createState() => _AdvicePageState();
+}
+
+
+class _AdvicePageState extends State<AdvicePage> with AutomaticKeepAliveClientMixin{
+  bool get wantKeepAlive => true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

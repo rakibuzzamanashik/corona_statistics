@@ -54,7 +54,7 @@ class _MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
         bottom: new TabBar(
           controller: controller,
           tabs: <Tab>[
-            new Tab(text: 'Overview'),
+            new Tab(text: 'Brief',),
             new Tab(text: 'World',),
             new Tab(text: 'Advice'),
             new Tab(text: 'About'),

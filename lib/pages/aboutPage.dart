@@ -7,9 +7,11 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class AboutPage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
