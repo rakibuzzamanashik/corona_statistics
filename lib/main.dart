@@ -1,7 +1,8 @@
 import 'package:coronastatistics/datasource.dart';
 import 'package:coronastatistics/pages/homepage.dart' as first;
 import 'package:coronastatistics/pages/detailsPage.dart' as second;
-import 'package:coronastatistics/pages/aboutPage.dart' as third;
+import 'package:coronastatistics/pages/aboutPage.dart' as fourth;
+import 'package:coronastatistics/pages/advice.dart' as third;
 import 'package:coronastatistics/pages/loadingPage.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,7 @@ class _MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   TabController controller;
   @override
   void initState() {
-    controller = new TabController(vsync: this, length: 3);
+    controller = new TabController(vsync: this, length: 4);
     super.initState();
   }
   @override
@@ -54,7 +55,8 @@ class _MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
           controller: controller,
           tabs: <Tab>[
             new Tab(text: 'Overview'),
-            new Tab(text: 'All Countries',),
+            new Tab(text: 'World',),
+            new Tab(text: 'Advice'),
             new Tab(text: 'About'),
           ],
         ),
@@ -65,7 +67,8 @@ class _MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
         children: <Widget>[
           new first.HomePage(),
           new second.Details(),
-          new third.AboutPage(),
+          new third.AdvicePage(),
+          new fourth.AboutPage(),
         ],
       ),
     );
