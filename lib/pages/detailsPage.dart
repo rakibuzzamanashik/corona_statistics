@@ -1,8 +1,10 @@
 import 'package:coronastatistics/datasource.dart';
+import 'package:coronastatistics/search.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:coronastatistics/search.dart';
 
 class Details extends StatefulWidget {
   @override
@@ -71,7 +73,20 @@ class _DetailsState extends State<Details> with AutomaticKeepAliveClientMixin {
           ),
         );
       },
-      itemCount: countryData == null? 0 : countryData.length,)
+      itemCount: countryData == null? 0 : countryData.length,),
+
+
+      floatingActionButton: SizedBox(
+        width: 45,
+        height: 45,
+        child: FloatingActionButton(
+          backgroundColor: Color(0xff202c3b),
+          onPressed: () {
+            showSearch(context: context, delegate: Search(countryData));
+          },
+          child: Icon(Icons.search,),
+        ),
+      ),
     );
   }
 }

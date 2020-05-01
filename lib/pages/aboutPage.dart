@@ -34,7 +34,7 @@ class AboutPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('App Version : 1.1', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, letterSpacing: 1),),
+                  Text('App Version : 2.0', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, letterSpacing: 1),),
                   SizedBox(height: 10),
                   Text('Description : Corona Live Update app gives you the Updated Statistics of the COVID-19 virus for the whole world. The informations are automatically updated in every 15 minutes.', style: TextStyle( fontSize: 15, letterSpacing: 1),),
                   SizedBox(height: 10),
